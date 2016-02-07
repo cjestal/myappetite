@@ -1,0 +1,37 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title">Search</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeModal(2)">Close</button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+    <form ng-submit="doSearch()">
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">Keywords</span>
+          <input type="text" ng-model="searchData.keywords">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Location</span>
+          <input type="text" ng-model="searchData.location">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Categories</span>
+          <input type="text" ng-model="searchData.categories">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Cuisines</span>
+          <input type="text" ng-model="searchData.cuisines">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Features</span>
+          <input type="text" ng-model="searchData.features">
+        </label>
+        <label class="item">
+          <button class="button button-block button-balanced" type="submit">Search</button>
+        </label>
+      </div>
+    </form>
+  </ion-content>
+</ion-modal-view>
